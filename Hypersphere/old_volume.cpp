@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
     MPI_Comm_size(MPI_COMM_WORLD, &Procs);
     srand48((long)my_rank);
-    for (int i = 2; i < 5; i++)
+    for (int i = 2; i < 20; i++)
     {
         globalres = getVolumes(i);
         if (my_rank==0)
